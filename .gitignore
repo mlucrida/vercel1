@@ -1,4 +1,5 @@
-
+# anything inside of the local folder
+local/
 
 # anything with a '-' before the name
 -*
