@@ -1,0 +1,11 @@
+
+
+# anything with a '-' before the name
+-*
+
+# anything that's a backup
+*.bak
+
+# anything that's a test
+*.test
+*-test
