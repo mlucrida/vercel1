@@ -1,6 +1,6 @@
 # personal items
 *-
-dev/*
+_dev/*
 *.bak
 *.test
 *-test
