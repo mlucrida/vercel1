@@ -76,13 +76,6 @@ const data = {
 				{title: "Vacation to Switzerland", url: "#"},
 			],
 		},
-		{
-			title: "Accounts",
-			url: "#",
-			icon: SquareTerminal,
-			isActive: false,
-			items: [],
-		},
 	],
 	accounts: [
 		{
