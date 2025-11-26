@@ -3,9 +3,8 @@ import Image from "next/image";
 // So this does not work out so well, you'll need to 
 // figure out how to translate your old acu bs coding
 // design into modern Next.js stuff
-export default function Home() {
-  return (
-	<div className="container-fluid">
+/*
+ <div className="container-fluid">
 		<div className="d-flex justify-content-between">
 			<div className="card">
 					<div className="card-header">
@@ -25,5 +24,7 @@ export default function Home() {
 			</div>
 		</div>
 	</div>
-	);
+*/
+export default function Home() {
+  return (<p></p>);
 }
