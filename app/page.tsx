@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Separator } from "@/components/ui/separator"
-import { AppSidebar } from "@/components/app-sidebar"
+import { Separator } from "@/components/ui/separator.tsx"
+import { AppSidebar } from "@/components/app-sidebar.tsx"
 
 import { ChartAreaInteractive } from "@/components/chart-area-interactive.tsx"
 import { ChartRadarLegend } from "@/components/chart-radar-legend.tsx"
