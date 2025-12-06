@@ -13,7 +13,7 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-  BreadcrumbSeperator,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 
 import {
