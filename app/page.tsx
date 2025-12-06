@@ -1,13 +1,11 @@
 import Image from "next/image";
-import { Separator } from "@/components/ui/separator.tsx"
-import { AppSidebar } from "@/components/app-sidebar.tsx"
+import { Separator } from "@/components/ui/separator"
+import { AppSidebar } from "@/components/app-sidebar"
 
-import { ChartAreaInteractive } from "@/components/chart-area-interactive.tsx"
-import { ChartRadarLegend } from "@/components/chart-radar-legend.tsx"
-import { ChartBarLabelCustom } from "@/components/chart-bar-label-custom.tsx"
-import { CustomCardComponent } from "@/components/matt-card.tsx"
-
-import './grid.css';
+import { ChartAreaInteractive } from "@/components/chart-area-interactive"
+import { ChartRadarLegend } from "@/components/chart-radar-legend"
+import { ChartBarLabelCustom } from "@/components/chart-bar-label-custom"
+import { CustomCardComponent } from "@/components/matt-card"
 
 import {
   Breadcrumb,
