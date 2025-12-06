@@ -90,7 +90,6 @@ function CustomCardComponent() {
           </Button>
           <Button 
             id="googleLoginButton" 
-            type="outline" 
             variant="outline" 
             className="w-full"
             onClick={() => {setMessage("Nope, no google allowed here"); setIsOpen(true)}}
