@@ -1,30 +1,52 @@
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator"
+import { AppSidebar } from "@/components/app-sidebar"
 
-// So this does not work out so well, you'll need to 
-// figure out how to translate your old acu bs coding
-// design into modern Next.js stuff
-/*
- <div className="container-fluid">
-		<div className="d-flex justify-content-between">
-			<div className="card">
-					<div className="card-header">
-						<h1>This is a Card</h1>
-					</div>
-					<div className="card-body">
-						<p>This is it's body</p>
-					</div>
-			</div>
-			<div className="card">
-					<div className="card-header">
-						<h1>This is a Card</h1>
-					</div>
-					<div className="card-body">
-						<p>This is it's body</p>
-					</div>
-			</div>
-		</div>
-	</div>
-*/
+import { ChartAreaInteractive } from "@/components/chart-area-interactive.tsx"
+import { ChartRadarLegend } from "@/components/chart-radar-legend.tsx"
+import { ChartBarLabelCustom } from "@/components/chart-bar-label-custom.tsx"
+import { CustomCardComponent } from "@/components/matt-card.tsx"
+
+import './grid.css';
+
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbiLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeperator,
+} from "@/components/ui/breadcrumb"
+
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar"
+
 export default function Home() {
-  return (<p></p>);
+  return(<>
+    <SidebarProvider>
+      <AppSidebar />
+      <SidebarInset>
+        <SidebarTrigger />
+          <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
+            <div className="grid auto-rows-min gap-4 md:grid-cols-3 grid-rows-[auto_1fr]">
+              <div className="bg-muted/50 aspect-video rounded-xl">
+                <ChartBarLabelCustom/>
+              </div>
+              <div className="bg-muted/50 aspect-video rounded-xl">
+                <ChartRadarLegend/>
+              </div>
+              <div className="bg-muted/50 aspect-video rounded-xl">
+                <CustomCardComponent/>
+              </div>
+            </div>
+            <div className="bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min">
+              <ChartAreaInteractive/>
+            </div>
+          </div>
+      </SidebarInset>
+    </SidebarProvider>
+  </>);
 }
