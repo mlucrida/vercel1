@@ -10,7 +10,7 @@ import { CustomCardComponent } from "@/components/matt-card"
 import {
   Breadcrumb,
   BreadcrumbItem,
-  BreadcrumbiLink,
+  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeperator,
